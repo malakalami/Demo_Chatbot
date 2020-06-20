@@ -76,6 +76,7 @@ intents:
   - Entretien_client_E_conseiller
   - Refus_entree_en_relation
   - Bearer_Shares_Companies
+  - out_of_scope
 responses:  
   utter_greet:
   - text: "Bonjour, comment je peux vous aider?"
@@ -307,6 +308,9 @@ responses:
   
   utter_Bearer_Shares_Companies:
   - text: "Les actionnaires des Bearer Shares Companies sont anonymes. La société émettrice n'enregistre ni le propriétaire de l'action, ni les pistes de transfert de propriété."
+  
+  utter_default:
+  - text: "Excusez-moi, je n'ai pas l'air de comprendre. Voulez-vous reformuler votre svp?"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
